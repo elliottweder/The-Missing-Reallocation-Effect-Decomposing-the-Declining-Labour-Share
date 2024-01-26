@@ -1,0 +1,44 @@
+\subsection{Data Sources And Construction \label{sec: data source}}
+
+Table \ref{tab:data_source} shows the data source and any sample notes for each of the four labour share definitions. 
+
+
+\begingroup
+\renewcommand*{\arraystretch}{1.3}
+
+\begin{table}[H]
+    \centering
+    \small
+    \caption{\normalsize Information about samples.}
+\begin{adjustbox}{angle=90}
+    \begin{tabular}{l|ccc}
+        
+        \toprule[1.1pt]
+        
+        Measure & Source & Years & Notes \\
+
+        \midrule[1.1pt]
+
+        Payroll & BEA \& \citet{elsbyDeclineLaborShare2013a} & 1987-2011 & Non-farm private sector \\
+
+        Same-wage-distribution & BEA-BLS integrated industry-level production account & 1987-2019 & Private sector excluding real estate \\
+
+        Same-labour-share & BEA \& \citep{mendieta-munozDeclineUSLabor2021} & 1987-2017 & Private sector excluding real estate\\
+
+        Economy-wide & BEA \& \citep{mendieta-munozDeclineUSLabor2021}  & 1987-2017 & Private sector excluding real estate\\
+
+
+        \bottomrule[1.1pt]
+    \end{tabular}
+\end{adjustbox}
+% \begin{minipage}{\linewidth}
+% \captionsetup{justification=raggedright,singlelinecheck=false}
+%     \caption*{Source: see Appendix \ref{sec: data source} for the data sources of each measure.}
+% \end{minipage}
+    \label{tab:data_source}
+\end{table}
+
+\endgroup
+
+
+% This appendix section shows the data sources for each labour share definition. First, the `same-wage-distribution' assumption uses data from the BEA-BLS integrated industry-level production account, available at: \url{https://www.bea.gov/data/special-topics/integrated-industry-level-production-account-klems}. The data are aggregated at the NAICS 3-digit classification. Examples of NAICS 3-digit industries are Farms, Computer and Electronic Products, and Legal Services. I exclude real estate and government sectors from the BEA-BLS sample, following \citet{barkaiDecliningLaborCapital2020, bridgmanLaborShareMarkups2023}. Second, the `same-labour-share' and 'economy-wide labour share' approaches use data from the \citet{mendieta-munozDeclineUSLabor2021} replication package, available at: \url{https://onlinelibrary.wiley.com/doi/full/10.1111/roiw.12487}. The data is aggregated into 14 sectors. Examples are Manufacturing, Transportation and Warehousing, and Professional and Business Services. Lastly, the `payroll labour share' approach uses data from the \citet{elsbyDeclineLaborShare2013a} replication package, available at \url{https://www.brookings.edu/articles/the-decline-of-the-u-s-labor-share/}. The data are aggregated at the NAICS 3-digit classification. For comparison to the \citet{elsbyDeclineLaborShare2013a} study, I include the real estate sector and exclude farming and government sectors. 

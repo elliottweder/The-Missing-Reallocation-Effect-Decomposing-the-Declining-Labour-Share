@@ -1,0 +1,46 @@
+% \subsection{Theorem \ref{theorem_1} Proof \label{sec: theorem_1_proof}}
+
+\noindent The Haltiwanger decomposition for the change in the labour share, $\Delta \lambda_{t} = \lambda_{t} - \lambda_{t-1}$, is
+\begin{equation*}
+    \Delta \lambda_{t} = \underbrace{\sum_{i=1}^{N}\Delta\omega_{it}\lambda_{it-1}}_\text{Between} + \underbrace{\sum_{i=1}^{N}\omega_{it-1}\Delta\lambda_{it}}_\text{Within} + \underbrace{\sum_{i=1}^{N}\Delta\omega_{it}\Delta\lambda_{it}}_\text{Cross}
+\end{equation*}
+in which $\Delta x_{it} = x_{it} - x_{it-1}$. Divide the `Cross' term into two
+\begin{equation}
+    \Delta \lambda_{t} = \underbrace{\sum_{i=1}^{N}\Delta\omega_{it}\lambda_{it-1}}_\text{Between} + \underbrace{\sum_{i=1}^{N}\omega_{it-1}\Delta\lambda_{it}}_\text{Within} + \underbrace{\frac{1}{2}\sum_{i=1}^{N}\Delta\omega_{it}\Delta\lambda_{it}}_\text{$\equiv$ Cross: A} + \underbrace{\frac{1}{2}\sum_{i=1}^{N}\Delta\omega_{it}\Delta\lambda_{it}}_\text{$\equiv$ Cross: B}.
+\label{eqn:haltiwanger_split}
+\end{equation}
+Add `Cross: A' to the `Within' component in equation (\ref{eqn:haltiwanger_split})
+\begin{equation*}
+\begin{split}
+    &= \frac{1}{2}\sum_{i=1}^{N}\Delta\omega_{it}\Delta\lambda_{it} + \sum_{i=1}^{N}\omega_{it-1}\Delta\lambda_{it} \\
+    &= \sum_{i=1}^{N}\frac{\Delta\omega_{it}}{2}\Delta\lambda_{it} + \sum_{i=1}^{N}\omega_{it-1}\Delta\lambda_{it}. \\
+\end{split}
+\end{equation*}
+Collect like terms
+\begin{equation}
+\begin{split}
+    &= \sum_{i=1}^{N}\bigg(\frac{\Delta\omega_{it}}{2} + \omega_{it-1}\bigg)\Delta\lambda_{it} \\
+    &= \sum_{i=1}^{N}\bigg(\frac{\omega_{it} - \omega_{it-1}}{2} + \omega_{it-1}\bigg)\Delta\lambda_{it} \\
+    &= \sum_{i=1}^{N}\bigg(\frac{\omega_{it} + \omega_{it-1}}{2}\bigg)\Delta\lambda_{it} \\
+    &= \sum_{i=1}^{N}\tilde{\omega}_{it}\Delta\lambda_{it} \\
+\end{split}
+\label{eqn:Shift_derivation}
+\end{equation}
+in which I denote $\tilde{x}_{it}$ as the arithmetic mean of $x_{it-1}$ and $x_{it}$. The last line in equation (\ref{eqn:Shift_derivation}) is the within-sector term in shift-share decomposition. Next, add `Cross: B' to the `Between' component in equation (\ref{eqn:haltiwanger_split})
+\begin{equation*}
+\begin{split}
+    &= \frac{1}{2}\sum_{i=1}^{N}\Delta\omega_{it}\Delta\lambda_{it} + \sum_{i=1}^{N}\Delta\omega_{it}\lambda_{it-1} \\
+    &= \sum_{i=1}^{N}\Delta\omega_{it}\frac{\Delta\lambda_{it}}{2} + \sum_{i=1}^{N}\Delta\omega_{it}\lambda_{it-1}. \\
+\end{split}
+\end{equation*}
+Collect like terms
+\begin{equation}
+\begin{split}
+    &= \sum_{i=1}^{N}\bigg(\frac{\Delta\lambda_{it}}{2} + \lambda_{it-1}\bigg)\Delta\omega_{it} \\
+    &= \sum_{i=1}^{N}\bigg(\frac{\lambda_{it} - \lambda_{it-1}}{2} + \lambda_{it-1}\bigg)\Delta\omega_{it} \\
+    &= \sum_{i=1}^{N}\bigg(\frac{\lambda_{it} + \lambda_{it-1}}{2}\bigg)\Delta\omega_{it} \\
+    &= \sum_{i=1}^{N}\Delta\omega_{it}\tilde{\lambda}_{it} \\
+\end{split}
+\label{eqn:Share_derivation}
+\end{equation}
+in which $\tilde{x}_{it}$ denotes the arithmetic mean of $x_{it-1}$ and $x_{it}$. The last line in equation (\ref{eqn:Share_derivation}) is the between-sector term in the shift-share decomposition. \qed

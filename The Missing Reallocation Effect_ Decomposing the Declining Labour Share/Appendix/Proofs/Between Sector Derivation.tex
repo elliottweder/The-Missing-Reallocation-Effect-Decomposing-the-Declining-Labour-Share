@@ -1,0 +1,32 @@
+\subsection{Reallocation Effect With Payroll Labour Share \label{sec: reallocation_payroll}}
+
+The reallocation effect is zero when using the shift-share decomposition instead of the Haltiwanger decomposition in the `payroll labour share' definition (see Table \ref{tab:rr}). By Theorem \ref{theorem_1}, the shift-share between-effect is small (downward biased) when the cross-term is large and negative. For the shift-share between term to be `more' undercounted than in samples that include self-employed income, we require
+\begin{equation*}
+    \sum_{i=1}^{N} \Delta\omega_{i}\Delta\lambda_{i}^{p} < \sum_{i=1}^{N} \Delta\omega_{i}\Delta\lambda_{i}
+\end{equation*}
+in which both terms are less than zero, as in the data. The total labour share $\lambda_{i}$ satisfies
+\begin{equation}
+    \lambda_{i} = \lambda_{i}^{p} + \lambda_{i}^{s}
+\label{eqn:labour_share_definition}
+\end{equation}
+where $\lambda_{i}^{p}$ and $\lambda_{i}^{s}$ are the payroll and self-employed labour shares in sector $i$, respectively. 
+
+To simplify, suppose $N = 2$ and that sector 1 is growing as a share of value-added. Then
+\begin{equation}
+\begin{split}
+    \Delta\omega_{1}\Delta\lambda_{1}^{p} + \Delta\omega_{2}\Delta\lambda_{2}^{p} &< \Delta\omega_{1}\Delta\lambda_{1} + \Delta\omega_{2}\Delta\lambda_{2} \\ 
+    \Delta\omega_{1}\Big(\Delta\lambda_{1}^{p} - \Delta\lambda_{i}\Big) &< \Delta\omega_{2}\Big(\Delta\lambda_{2} -\Delta\lambda_{2}^{p}\Big) \\ 
+    \Delta\omega_{1}\Big(\Delta\lambda_{1}^{p} - \Delta\lambda_{i}\Big) &< \Delta\omega_{1}\Big(\Delta\lambda_{2}^{p} -\Delta\lambda_{2}\Big) \\ 
+    \Delta\lambda_{1}^{p} - \Delta\lambda_{i} &< \Delta\lambda_{2}^{p} -\Delta\lambda_{2} \\ 
+\end{split}
+\end{equation}
+Using definition (\ref{eqn:labour_share_definition})
+\begin{equation}
+\begin{split}
+    \Delta\lambda_{1}^{p} - \Delta\lambda_{i} &< \Delta\lambda_{2}^{p} -\Delta\lambda_{2} \\ 
+    -\Delta\lambda_{1}^{s} &< -\Delta\lambda_{2}^{s} \\ 
+    \Delta\lambda_{1}^{s} &> \Delta\lambda_{2}^{s}
+\end{split}
+\label{eqn:self_emp_condition}
+\end{equation}
+So, the outlier present in table \ref{tab:rr} arises when the change in the self-employed labour share is larger (more negative) in the shrinking sector. Translated into the sixty-sector-setting, (\ref{eqn:self_emp_condition}) implies the self-employed labour share should fall more in shrinking sectors in, for example, the Manufacturing and Trade, Transportation and Utilities supersectors. Intuitively, if (\ref{eqn:self_emp_condition}) holds then the size of the cross-term becomes more positive because the total labour share falls by more than the payroll labour share in shrinking sectors. 
